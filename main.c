@@ -18,7 +18,7 @@ int main(int argc,char **argv)
 	bag_t *b=new_bag(54);
 	for (int i=1;i<=54;i++)
 		place(b,i);
-	for (int i=0;i<100;i++) {
+	for (int i=0;i<1000;i++) {
 		int arr[6];
 		for (int i=0;i<6;i++)
 			arr[i]=pick(b);

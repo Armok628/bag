@@ -10,12 +10,10 @@ typedef struct {
 } bag_t;
 bag_t *new_bag(int size)
 {
-	if (!size)
-		return NULL;
 	bag_t *b=malloc(sizeof(bag_t));
 	b->max=size;
 	b->items=0;
-	b->cont=malloc(b->max*sizeof(BAG_TYPE));
+	b->cont=size>0?malloc(b->max*sizeof(BAG_TYPE)):NULL;
 	return b;
 }
 void free_bag(bag_t *b)
