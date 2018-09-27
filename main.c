@@ -30,9 +30,6 @@ int main(int argc,char **argv)
 			printf("(contains duplicates)");
 		putchar('\n');
 	}
-	for (int i=0;i<54;i++)
-		printf("%d ",b->cont[i]);
-	putchar('\n');
 	free_bag(b);
 	return 0;
 }
